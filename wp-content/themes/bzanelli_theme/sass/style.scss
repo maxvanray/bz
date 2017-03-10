@@ -1,0 +1,36 @@
+/*!
+Theme Name: Barbara Zanelli Theme
+Theme URI: http://underscores.me/
+Author: Max VanRay
+Author URI: http://maximummedialabs.com
+Description: Theme built for Barbara Zanelli
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bzanelli_theme
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Barbara Zanelli Theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Bootstrap
+
+# General
+
+--------------------------------------------------------------*/
+
+@import 'bootstrap';
+
+@import "general";
+
+@import "max";
