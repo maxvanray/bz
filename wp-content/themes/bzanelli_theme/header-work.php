@@ -12,7 +12,19 @@
 
 
 
-    <?php wp_head(); ?>
+    <!-- Royal Preloader CSS -->
+    <link href="<?php echo trailingslashit( get_template_directory_uri() ) .'css/royal_preloader.css'?>" rel="stylesheet">
+
+    <!-- jQuery Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- jQuery Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+
+
+
+    <!-- Royal Preloader -->
+    <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/royal_preloader.min.js'?>"></script>
     <script type="text/javascript">
       Royal_Preloader.config({
           mode:           'number',
@@ -21,9 +33,17 @@
       });
     </script>
 
+    <!-- Stylesheets -->
+    <link href="<?php echo trailingslashit( get_template_directory_uri() ) .'css/bootstrap.min.css' ?>" rel="stylesheet">
+    <link href="<?php echo trailingslashit( get_template_directory_uri() ) .'css/ionicons.min.css' ?>" rel="stylesheet">
+    <link href="<?php echo trailingslashit( get_template_directory_uri() ) .'css/pe-icon-7-stroke.css' ?>" rel="stylesheet">
+    <link href="<?php echo trailingslashit( get_template_directory_uri() ) .'css/magnific-popup.css' ?>" rel="stylesheet">
+    <link href="<?php echo trailingslashit( get_template_directory_uri() ) .'css/style.css' ?>" rel="stylesheet" title="main-css">
+
+
   </head>
 
-<body <?php body_class('body-spacing-top royal_preloader'); ?>>
+<body class="body-static-navbar royal_preloader">
 
   <!-- Preloader -->
   <div id="royal_preloader"></div>
@@ -32,7 +52,7 @@
   <header>
 
   <!-- Begin Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top navbar-spacing-top-fixed">
+  <nav class="navbar navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse">
@@ -41,7 +61,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand scroll-top" href="/">B Zanelli</a>
+        <a class="navbar-brand scroll-top" href="/">
+          <img src="<?php bloginfo('template_url'); ?>/images/signature.png" class="logo img-responsive" alt="Barbara Zanelli">
+        </a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -59,4 +81,5 @@
 
   </header>
   <!-- End Header -->
+
 

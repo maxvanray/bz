@@ -29,6 +29,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 --------------------------------------------------------------*/
 
+@import '../node_modules/breakpoint-sass/stylesheets/_breakpoint';
+
 @import 'bootstrap';
 
 @import "general";

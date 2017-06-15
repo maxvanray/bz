@@ -11,7 +11,7 @@
 	<div class="container">
 
 			<!-- Title -->
-			<div class="row mb40">
+			<div class="row title">
 				<div class="col-xs-12 text-center">
 					<h2>About</h2>
 					<span class="divider divider-center divider-dark no-margin-bottom"></span>

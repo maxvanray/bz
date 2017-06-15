@@ -28,10 +28,45 @@
   </footer>
 
 
-  <?php wp_footer(); ?>
+  <?php //wp_footer(); ?>
 
 
 </div><!-- #page -->
+
+<!-- Javascript Files -->
+  <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/bootstrap.min.js' ?>"></script>
+  <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/isotope.pkgd.min.js' ?>"></script>
+  <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/imagesloaded.pkgd.min.js' ?>"></script>
+  <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/jquery.magnific-popup.min.js' ?>"></script>
+  <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/scrollreveal.min.js' ?>"></script>
+  <script type="text/javascript">
+    /* ---- Portfolio Isotope ---- */
+    $(document).ready(function(){
+      var $grid = $('.grid').isotope({
+          layoutMode: 'masonry'
+      });
+
+      $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
+      });
+
+
+
+      $('.filter-button-group').on('click', 'li', function() {
+          var filterValue = $(this).attr('data-filter');
+          $grid.isotope({
+              filter: filterValue
+          });
+      });
+      $(".filter-button-group").each(function(t, e) {
+          var i = $(e);
+          i.on("click", "li", function() {
+              i.find(".active").removeClass("active"), $(this).addClass("active")
+          })
+      });
+    });
+  </script>
+  <script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ) .'js/main.js' ?>"></script>
 
 
 
